@@ -3,7 +3,7 @@ pipeline {
     environment {
         AWS_REGION = 'ap-south-1'
         ECR_REPO = 'flask-ecr-app'
-        ACCOUNT_ID = '477973726849'           // ← change
+        ACCOUNT_ID = '123456789'           // ← change
         IMAGE_TAG = "${BUILD_NUMBER}"            // or Git commit hash
         ECR_REGISTRY = "${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
     }
